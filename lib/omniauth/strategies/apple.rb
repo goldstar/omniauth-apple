@@ -16,6 +16,7 @@ module OmniAuth
              response_mode: 'form_post',
              scope: 'email name'
       option :authorized_client_ids, []
+      option :provider_ignores_state, true
 
       uid { id_info['sub'] }
 
